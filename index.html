@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bienvenida">
+        <h1 class="titulo-bienvenida">Bienvenido a la Plataforma Educativa</h1>
+        <button id="siguienteInicio">Siguiente</button>
+    </div>
+
+    <div id="seleccionRol" style="display: none;">
+        <button id="volverBienvenida">Volver</button>
+
+        <div class="botones-inicio">
+            <button id="botonDocente">Docente</button>
+            <button id="botonEstudiante">Estudiante</button>
+        </div>
+
+        <div id="formularioDocente" style="display: none;">
+            <h2>Datos del Docente</h2>
+            <input type="text" id="idDocente" placeholder="ID del Docente">
+            <input type="text" id="nombreDocente" placeholder="Nombre del Docente">
+            <button id="siguienteDocente">Siguiente</button>
+        </div>
+
+        <div id="formularioEstudiante" style="display: none;">
+            <h2>Datos del Estudiante</h2>
+            <input type="text" id="nombreEstudiante" placeholder="Nombre del Estudiante">
+            <input type="text" id="codigoEstudiante" placeholder="Código Estudiantil">
+            <select id="gradoEstudiante">
+                <option value="">Selecciona el Grado</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button id="siguienteEstudiante">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

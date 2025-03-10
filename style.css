@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/estudiantes-trabajando-computadora-habitacion_1308-30865.jpg'); /* Agrega esta línea */
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.bienvenida {
+    text-align: center;
+}
+
+.titulo-bienvenida {
+    font-size: 3em;
+    font-weight: bold;
+    animation: tambaleo 2s infinite;
+}
+
+@keyframes tambaleo {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    75% { transform: rotate(-2deg); }
+}
+
+button {
+    padding: 15px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #4a90e2; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: #357abd; /* Cambio de color al pasar el ratón */
+}
+
+#seleccionRol {
+    display: none;
+    text-align: center;
+}
+
+#gradoEstudiante {
+    padding: 10px;
+    margin: 5px;
+}

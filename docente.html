@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Docente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Panel del Docente</h1>
+    </header>
+
+    <main>
+        <button id="volverInicio">Volver</button>
+
+        <div class="opciones-docente">
+            <button id="botonCursos">Cursos</button>
+            <button id="botonResultados">Resultados</button>
+            <button id="botonEstudiantesRegistrados">Estudiantes Registrados</button>
+        </div>
+
+        <div id="grados" style="display: none;">
+            <h2>Grados</h2>
+            <button class="grado-boton" data-grado="1">Primaria 1</button>
+            <button class="grado-boton" data-grado="2">Primaria 2</button>
+            <button class="grado-boton" data-grado="3">Primaria 3</button>
+            <button class="grado-boton" data-grado="4">Primaria 4</button>
+            <button class="grado-boton" data-grado="5">Primaria 5</button>
+        </div>
+
+        <div id="resultados" style="display: none;">
+            <h2>Resultados de Estudiantes</h2>
+            <div id="listaResultados"></div>
+        </div>
+
+        <div id="estudiantesRegistrados" style="display: none;">
+            <h2>Estudiantes Registrados</h2>
+            <div id="listaEstudiantesRegistrados"></div>
+        </div>
+    </main>
+
+    <script src="docente.js"></script>
+</body>
+</html>
