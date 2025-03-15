@@ -351,3 +351,139 @@ a:hover {
 /* ESTILOS Formas de Evaluación FIN*/
 
 
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.bienvenida, #seleccionRol, #formularioDocente, #paginaDocente, #formularioEstudiante {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.titulo-bienvenida {
+    color: #007bff;
+    margin-bottom: 20px;
+    animation: moverTitulo 5s infinite alternate; /* Agregamos la animación */
+}
+
+@keyframes moverTitulo { /* Definimos la animación */
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* ... (resto de tus estilos) ... */
+
+/* IMAGEN DE BIENVENIDA FONDO */
+body {
+    background-image: url('bienvenida/imageninicio.jpg'); /* Reemplaza 'tu-imagen.jpg' con el nombre de tu archivo */
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+    /* Otros estilos opcionales */
+    font-family: sans-serif; /* O la fuente que prefieras */
+    color: #333; /* O el color de texto que prefieras */
+    margin: 0; /* Para eliminar márgenes predeterminados */
+    padding: 0; /* Para eliminar rellenos predeterminados */
+}
+
+/* Opcional: Si necesitas ajustar el contenido para que se vea bien sobre la imagen de fondo */
+.bienvenida, #seleccionRol, #formularioDocente, #paginaDocente, #formularioEstudiante {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el contenido */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+}
+
+/* FIN IMAGEN DE BIENVENIDA FONDO */
+
+
+
+
+/* ESTILOS PARA Actividades de Aprendizaje */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+#actividadesGrados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.actividades-grado {
+    text-align: center;
+    width: 30%; /* Ajuste para dejar espacio entre secciones */
+    min-width: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.actividades-grado h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.actividades-grado p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* FIN ESTILOS PARA Actividades de Aprendizaje */
