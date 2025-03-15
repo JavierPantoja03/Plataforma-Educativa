@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.bienvenida, #seleccionRol, #formularioDocente, #paginaDocente, #formularioEstudiante {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.titulo-bienvenida {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-rol {
+    background-color: #28a745;
+}
+
+.btn-rol:hover {
+    background-color: #1e8449;
+}
+
+.botones-inicio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-form {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.opciones-docente {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-opcion {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.icono {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#grados, #estudiantesRegistrados {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grados-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grado-boton {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.grado-boton:hover {
+    background-color: #1e8449;
+}
+
+#listaEstudiantesRegistrados {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-volver {
+    background-color: #6c757d;
+    color: white;
+}

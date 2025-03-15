@@ -10,14 +10,21 @@
     <header>
         <h1>Selecciona un Juego</h1>
     </header>
-
     <main>
         <button id="volverInicio">Volver</button>
-
         <div id="juegosEstudiante">
         </div>
+        <div id="modal-terminar" style="display: none;">
+            <p>¿Finalizaste el juego?</p>
+            <button id="modal-si">Sí</button>
+            <button id="modal-no">No</button>
+        </div>
+        <div id="modal-puntaje" style="display: none;">
+            <p>¿Qué puntaje obtuviste?</p>
+            <input type="number" id="input-puntaje" min="1" max="100">
+            <button id="modal-puntaje-ok">Enviar</button>
+        </div>
     </main>
-
     <script src="estudiante.js"></script>
 </body>
 </html>

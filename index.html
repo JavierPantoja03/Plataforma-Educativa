@@ -9,29 +9,48 @@
 <body>
     <div class="bienvenida">
         <h1 class="titulo-bienvenida">Bienvenido a la Plataforma Educativa</h1>
-        <button id="siguienteInicio">Siguiente</button>
+        <button id="siguienteInicio" class="btn">Siguiente</button>
     </div>
 
     <div id="seleccionRol" style="display: none;">
-        <button id="volverBienvenida">Volver</button>
+        <button id="volverBienvenida" class="btn">Volver</button>
 
         <div class="botones-inicio">
-            <button id="botonDocente">Docente</button>
-            <button id="botonEstudiante">Estudiante</button>
+            <button id="botonDocente" class="btn btn-rol">Docente</button>
+            <button id="botonEstudiante" class="btn btn-rol">Estudiante</button>
         </div>
 
         <div id="formularioDocente" style="display: none;">
             <h2>Datos del Docente</h2>
-            <input type="text" id="idDocente" placeholder="ID del Docente">
-            <input type="text" id="nombreDocente" placeholder="Nombre del Docente">
-            <button id="siguienteDocente">Siguiente</button>
+            <input type="text" id="idDocente" placeholder="ID del Docente" class="input-form">
+            <input type="text" id="nombreDocente" placeholder="Nombre del Docente" class="input-form">
+            <button id="siguienteDocente" class="btn">Siguiente</button>
+        </div>
+
+        <div id="paginaDocente" style="display: none;">
+            <h2>Bienvenido, Docente</h2>
+            <div class="banner-docente">
+                <div class="seccion-actividades">
+                    <h3><strong>Actividades de Aprendizaje</strong></h3>
+                    <img src="actividades.jpg" alt="Actividades" class="banner-img">
+                    <p>Encuentra aquí las actividades para cada grado.</p>
+                    <button id="verActividades" class="banner-btn">Ver Actividades</button>
+                </div>
+                <div class="seccion-evaluacion">
+                    <h3><strong>Formas de Evaluación</strong></h3>
+                    <img src="evaluacion.jpg" alt="Evaluación" class="banner-img">
+                    <p>Conoce cómo evaluaremos a los estudiantes.</p>
+                    <button id="verEvaluacion" class="banner-btn">Ver Evaluación</button>
+                </div>
+            </div>
+            <button id="volverSeleccionRol" class="banner-btn">Volver</button>
         </div>
 
         <div id="formularioEstudiante" style="display: none;">
             <h2>Datos del Estudiante</h2>
-            <input type="text" id="nombreEstudiante" placeholder="Nombre del Estudiante">
-            <input type="text" id="codigoEstudiante" placeholder="Código Estudiantil">
-            <select id="gradoEstudiante">
+            <input type="text" id="nombreEstudiante" placeholder="Nombre del Estudiante" class="input-form">
+            <input type="text" id="codigoEstudiante" placeholder="Código Estudiantil" class="input-form">
+            <select id="gradoEstudiante" class="input-form">
                 <option value="">Selecciona el Grado</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -39,7 +58,7 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
-            <button id="siguienteEstudiante">Siguiente</button>
+            <button id="siguienteEstudiante" class="btn">Siguiente</button>
         </div>
     </div>
 

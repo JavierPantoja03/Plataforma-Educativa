@@ -1,55 +1,353 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa;
-    color: #333;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('images/estudiantes-trabajando-computadora-habitacion_1308-30865.jpg'); /* Agrega esta línea */
-    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
-.bienvenida {
+.bienvenida, #seleccionRol, #formularioDocente, #paginaDocente, #formularioEstudiante {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 80%;
+    max-width: 600px;
 }
 
 .titulo-bienvenida {
-    font-size: 3em;
-    font-weight: bold;
-    animation: tambaleo 2s infinite;
+    color: #007bff;
+    margin-bottom: 20px;
 }
 
-@keyframes tambaleo {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(2deg); }
-    75% { transform: rotate(-2deg); }
-}
-
-button {
-    padding: 15px 20px;
-    margin: 10px;
+.btn {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
-    background-color: #4a90e2; /* Color de fondo */
-    color: white; /* Color de texto */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
 }
 
-button:hover {
-    background-color: #357abd; /* Cambio de color al pasar el ratón */
+.btn:hover {
+    background-color: #0056b3;
 }
 
-#seleccionRol {
-    display: none;
+.btn-rol {
+    background-color: #28a745;
+}
+
+.btn-rol:hover {
+    background-color: #1e8449;
+}
+
+.botones-inicio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-form {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.banner-docente {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.seccion-actividades, .seccion-evaluacion {
+    text-align: center;
+    width: 45%;
+    padding: 20px;
+}
+
+.banner-img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.banner-btn {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* BANNER DOCENTE */
+.banner-docente {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e0f7fa; /* Un fondo claro y suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible */
+}
+
+.seccion-actividades, .seccion-evaluacion {
+    text-align: center;
+    width: 45%; /* Ajuste para dejar espacio entre secciones */
+    padding: 20px;
+}
+
+.banner-img {
+    width: 150px; /* Tamaño decente para las imágenes */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.banner-btn {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.banner-btn:hover {
+    background-color: #0056b3;
+}
+
+/* FIN BANNER DOCENTE */
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-#gradoEstudiante {
-    padding: 10px;
-    margin: 5px;
+
+/* ESTUDIANTE JUEGOS */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#juegosEstudiante {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.juego-boton {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.juego-boton:hover {
+    background-color: #0056b3;
+}
+
+#volverInicio {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#modal-terminar, #modal-puntaje {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+    z-index: 1000;
+}
+
+#modal-si, #modal-no, #modal-puntaje-ok {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#modal-si:hover, #modal-no:hover, #modal-puntaje-ok:hover {
+    background-color: #0056b3;
+}
+
+#input-puntaje {
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* FIN ESTUDIANTE JUEGOS */
+
+
+/* ESTILOS Formas de Evaluación */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.titulo-cuadro-azul {
+    background-color: #e0f7fa;
+    border: 2px solid #03a9f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+#evaluacionGrados {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.evaluacion-grado {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(30% - 20px);
+    min-width: 250px;
+    text-align: left;
+}
+
+.evaluacion-grado h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.evaluacion-grado p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* ESTILOS Formas de Evaluación FIN*/
+
+
